@@ -14,7 +14,7 @@ var corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.use("uploads", express.static("uploads")); //upload 폴더 접근 권한 부여
+app.use("/uploads", express.static("uploads")); //upload 폴더 접근 권한 부여
 // app.use(express.static("uploads"));
 
 const storage = multer.diskStorage({
