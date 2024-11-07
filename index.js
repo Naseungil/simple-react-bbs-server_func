@@ -32,7 +32,7 @@ const upload = multer({ storage: storage });
 const mysql = require("mysql");
 const db = mysql.createConnection({
   host: "localhost",
-  user: "react_bbs",
+  user: "root",
   password: "12345",
   database: "react_bbs",
 });
